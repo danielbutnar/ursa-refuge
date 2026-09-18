@@ -1,0 +1,15 @@
+{
+  "name": "Ursa, a mountain refuge",
+  "short_name": "Ursa",
+  "description": "Twelve bunks at 1,842 m in the Făgăraș Mountains. A concept project.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E9EDE5",
+  "theme_color": "#0A1430",
+  "icons": [
+    { "src": "assets/logo/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/logo/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/logo/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

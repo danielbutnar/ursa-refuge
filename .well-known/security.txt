@@ -1,0 +1,4 @@
+Contact: mailto:daniel.butnar@gmail.com
+Expires: 2027-09-18T00:00:00.000Z
+Preferred-Languages: en, ro, de
+Canonical: https://danielbutnar.github.io/ursa-refuge/.well-known/security.txt

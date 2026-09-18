@@ -1,0 +1,6 @@
+# The Vercel preview only needs the site itself.
+docs
+.claude
+.playwright-mcp
+CLAUDE.md
+README.md

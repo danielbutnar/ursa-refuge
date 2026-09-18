@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-qOhFsq0QMV2REqNwk5hGH5bZE9SkX6gt6yeyKdYPv+U='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Ursa: a stone refuge at 1,842 m in the Făgăraș Mountains</title>
+<meta name="description" content="Twelve bunks, a wood stove and a sky with no town lights in it. A four-hour walk from the road, open 15 June to 15 October.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#E9EDE5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101A16" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://danielbutnar.github.io/ursa-refuge/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ursa">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Ursa: a stone refuge at 1,842 m in the Făgăraș Mountains">
+<meta property="og:description" content="Twelve bunks, a wood stove and a sky with no town lights in it. A four-hour walk from the road.">
+<meta property="og:url" content="https://danielbutnar.github.io/ursa-refuge/">
+<meta property="og:image" content="https://danielbutnar.github.io/ursa-refuge/assets/logo/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A generated topographic map of a Carpathian valley with a red waymarked trail climbing to the Ursa refuge.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://danielbutnar.github.io/ursa-refuge/#website",
+  "url": "https://danielbutnar.github.io/ursa-refuge/",
+  "name": "Ursa",
+  "description": "Concept website for a fictional mountain refuge in the Făgăraș Mountains, Romania.",
+  "inLanguage": "en-GB",
+  "creator": {
+    "@type": "Person",
+    "name": "Daniel Butnar",
+    "sameAs": ["https://github.com/danielbutnar"]
+  }
+}
+</script>
+<link rel="icon" href="assets/logo/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/brygada-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/terrain.js" defer></script>
+<script src="assets/js/sky.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="m-stripe" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" fill="#fff" stroke="#16261F" stroke-width="1.5"/><rect x="1.5" y="8.5" width="21" height="7" fill="#C8201A"/></symbol>
+  <symbol id="m-cross" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" fill="#fff" stroke="#16261F" stroke-width="1.5"/><path d="M9.5 4h5v5.5H20v5h-5.5V20h-5v-5.5H4v-5h5.5z" fill="#1F4E9A"/></symbol>
+  <symbol id="m-triangle" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" fill="#fff" stroke="#16261F" stroke-width="1.5"/><path d="M12 4.5 20 19H4z" fill="#EDB60C"/></symbol>
+  <symbol id="ursa-mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#0A1430"/><path d="M10 43.5 16.1 33.1 24.2 31.1 34.4 29.3 40.2 35.4 54 30.4 53.7 20.5 34.4 29.3" fill="none" stroke="#EEF0E6" stroke-opacity=".4" stroke-width="1.2"/><g fill="#EEF0E6"><circle cx="10" cy="43.5" r="2.6"/><circle cx="16.1" cy="33.1" r="2.6"/><circle cx="24.2" cy="31.1" r="3"/><circle cx="34.4" cy="29.3" r="2.2"/><circle cx="40.2" cy="35.4" r="2.6"/><circle cx="54" cy="30.4" r="2.6"/><circle cx="53.7" cy="20.5" r="3"/></g><rect x="10" y="50" width="44" height="4" fill="#C8201A"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header__inner">
+    <a class="brand" href="./" aria-label="Ursa, home">
+      <svg class="brand__mark" width="32" height="32" aria-hidden="true"><use href="#ursa-mark"/></svg>
+      <span class="brand__name">Ursa</span>
+    </a>
+    <a class="concept-tag" href="colophon.html">Concept project</a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#climb">The climb</a></li>
+        <li><a href="#refuge">The refuge</a></li>
+        <li><a href="#routes">Routes</a></li>
+        <li><a href="#sky">Night sky</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--red header__cta" href="#book">Book a bunk</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="#climb">The climb</a></li>
+      <li><a href="#refuge">The refuge</a></li>
+      <li><a href="#routes">Routes</a></li>
+      <li><a href="#sky">Night sky</a></li>
+      <li><a href="#book">Book a bunk</a></li>
+    </ul>
+  </nav>
+  <p class="mobile-menu__note"><a href="colophon.html">Ursa is a concept project. Read how it was made.</a></p>
+</div>
+
+<main id="main">
+
+  <!-- ============ Hero: the map ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas class="hero__map" data-terrain aria-hidden="true"></canvas>
+    <div class="map-readout" data-readout aria-hidden="true" hidden><span></span><span></span></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__title" id="hero-title">Sleep above the treeline.</h1>
+        <p class="hero__lead">Ursa is a stone refuge at 1,842&nbsp;metres in the Făgăraș Mountains: twelve bunks, a wood stove, dinner at seven and a sky with no town lights in it. The only way in is a four-hour walk.</p>
+        <div class="hero__actions">
+          <a class="btn btn--red" href="#book">Book a bunk</a>
+          <a class="btn btn--line" href="#climb">See the route</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__collar">
+      <div class="wrap collar__inner">
+        <ul class="collar__routes" aria-label="Waymarked routes on the map">
+          <li><svg width="16" height="16" aria-hidden="true"><use href="#m-stripe"/></svg>Valea Ursului</li>
+          <li><svg width="16" height="16" aria-hidden="true"><use href="#m-cross"/></svg>Muchia Lupului</li>
+          <li><svg width="16" height="16" aria-hidden="true"><use href="#m-triangle"/></svg>To the summit</li>
+        </ul>
+        <p class="collar__scale"><span class="scalebar" data-scale aria-hidden="true"></span>1 km</p>
+        <p>Contours every <span data-interval>25 m</span></p>
+        <p class="collar__coords">45°35′ N, 24°38′ E</p>
+        <p class="collar__hint">Point at the map to read the height</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ The climb ============ -->
+  <section class="climb" id="climb" aria-labelledby="climb-title">
+    <div class="wrap climb__grid">
+      <div class="climb__intro">
+        <h2 class="h2" id="climb-title">Four hours from the road</h2>
+        <p class="lede">Follow the red stripe from the forestry barrier at Poiana Neagră: 7.4&nbsp;km and 1,202&nbsp;m of climbing, with water on the way and a stove at the end.</p>
+      </div>
+
+      <figure class="profile" data-profile>
+        <p class="profile__now" aria-hidden="true"><span class="profile__h" data-profile-h>640</span><span class="profile__unit">m</span></p>
+        <p class="profile__where" aria-hidden="true" data-profile-where>Poiana Neagră, 0.0 km</p>
+        <svg class="profile__svg" viewBox="0 0 600 260" role="img" aria-labelledby="profile-cap">
+          <g class="profile__grid">
+            <line x1="20" x2="580" y1="199.2" y2="199.2"/><text x="20" y="193">800 m</text>
+            <line x1="20" x2="580" y1="137.7" y2="137.7"/><text x="20" y="131.5">1,200 m</text>
+            <line x1="20" x2="580" y1="76.2" y2="76.2"/><text x="20" y="70">1,600 m</text>
+          </g>
+          <polygon class="profile__area" points="20,230 20,223.8 80.5,211.5 141.1,190 194.1,150 247,131.5 307.6,108.5 368.1,88.5 405.9,79.2 458.9,70 504.3,60.8 542.2,46.9 580,38.9 580,230"/>
+          <polyline class="profile__line" data-profile-line points="20,223.8 80.5,211.5 141.1,190 194.1,150 247,131.5 307.6,108.5 368.1,88.5 405.9,79.2 458.9,70 504.3,60.8 542.2,46.9 580,38.9"/>
+          <g class="profile__stops">
+            <circle cx="20" cy="223.8" r="5"/><circle cx="194.1" cy="150" r="5"/><circle cx="405.9" cy="79.2" r="5"/><circle cx="580" cy="38.9" r="5"/>
+          </g>
+          <circle class="profile__walker" data-profile-walker cx="20" cy="223.8" r="8"/>
+        </svg>
+        <figcaption id="profile-cap">Elevation profile of the red-stripe route: 640&nbsp;m at the barrier, 1,120&nbsp;m at the forest trough after 2.3&nbsp;km, 1,580&nbsp;m at the sheepfold after 5.1&nbsp;km, 1,842&nbsp;m at the refuge after 7.4&nbsp;km.</figcaption>
+      </figure>
+
+      <ol class="waypoints">
+        <li class="waypoint" data-km="0" data-name="Poiana Neagră">
+          <p class="waypoint__h"><span class="num">640</span>&nbsp;m</p>
+          <div class="waypoint__body">
+            <h3 class="waypoint__name">Poiana Neagră</h3>
+            <p class="waypoint__meta">Start. Parking for 20 cars.</p>
+            <p>Leave the car at the forestry barrier. The red stripe starts on the first beech on your left and doesn’t stop until our door. There’s a bus from Victoria to the barrier at 7:40 on weekends.</p>
+          </div>
+        </li>
+        <li class="waypoint" data-km="2.3" data-name="Făgetul Mare">
+          <p class="waypoint__h"><span class="num">1,120</span>&nbsp;m</p>
+          <div class="waypoint__body">
+            <h3 class="waypoint__name">Făgetul Mare</h3>
+            <p class="waypoint__meta">2.3 km, about 1 h 10 from the barrier.</p>
+            <p>An hour of beech forest along Valea Ursului. Fill your bottle at the wooden trough: it’s spring water and the last tap before the refuge.</p>
+          </div>
+        </li>
+        <li class="waypoint" data-km="5.1" data-name="Stâna din Deal">
+          <p class="waypoint__h"><span class="num">1,580</span>&nbsp;m</p>
+          <div class="waypoint__body">
+            <h3 class="waypoint__name">Stâna din Deal</h3>
+            <p class="waypoint__meta">5.1 km, about 2 h 40 from the barrier.</p>
+            <p>The trees give up and the sheepfold appears. From July to September the shepherds sell fresh cheese. Their dogs are loud but they stay with the flock: walk wide, don’t run, and they’ll lose interest.</p>
+          </div>
+        </li>
+        <li class="waypoint" data-km="7.4" data-name="Refugiul Ursa">
+          <p class="waypoint__h"><span class="num">1,842</span>&nbsp;m</p>
+          <div class="waypoint__body">
+            <h3 class="waypoint__name">Refugiul Ursa</h3>
+            <p class="waypoint__meta">7.4 km, about 3 h 45 from the barrier.</p>
+            <p>The last climb is short and steep. Take your boots off at the door; there’s tea on the stove and a bunk with your name on it.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ The refuge ============ -->
+  <section class="refuge" id="refuge" aria-labelledby="refuge-title">
+    <div class="wrap">
+      <div class="refuge__intro">
+        <h2 class="h2" id="refuge-title">Stone outside, pine inside</h2>
+        <p class="lede">Shepherds built the first walls here in 1936. We rebuilt the refuge stone by stone in 2019, with sixty-centimetre walls, a pine interior and one stove that heats the whole house.</p>
+      </div>
+
+      <div class="refuge__grid">
+        <figure class="plan" data-plan>
+          <svg viewBox="0 0 640 520" role="img" aria-labelledby="plan-cap">
+            <defs>
+              <pattern id="stone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect width="7" height="7" class="plan__stone-bg"/>
+                <line x1="0" y1="0" x2="0" y2="7" class="plan__stone-line"/>
+              </pattern>
+            </defs>
+            <!-- porch -->
+            <g class="plan__porch">
+              <rect x="200" y="390" width="400" height="58"/>
+              <rect x="206" y="438" width="8" height="8" class="plan__post"/><rect x="330" y="438" width="8" height="8" class="plan__post"/><rect x="460" y="438" width="8" height="8" class="plan__post"/><rect x="586" y="438" width="8" height="8" class="plan__post"/>
+            </g>
+            <rect class="plan__room" data-room="porch" x="214" y="392" width="372" height="44"/>
+            <!-- walls -->
+            <rect x="64" y="54" width="512" height="312" class="plan__timber"/>
+            <path d="M40 30h560v360H40z M64 54v312h512V54z" fill="url(#stone)" fill-rule="evenodd" class="plan__walls"/>
+            <!-- rooms -->
+            <rect class="plan__room" data-room="kitchen" x="64" y="54" width="120" height="112"/>
+            <rect class="plan__room" data-room="small" x="190" y="54" width="146" height="112"/>
+            <rect class="plan__room" data-room="common" x="64" y="172" width="272" height="194"/>
+            <rect class="plan__room" data-room="drying" x="342" y="54" width="66" height="152"/>
+            <rect class="plan__room" data-room="entry" x="342" y="212" width="66" height="154"/>
+            <rect class="plan__room" data-room="large" x="414" y="54" width="162" height="312"/>
+            <!-- doors: openings -->
+            <g class="plan__open">
+              <rect x="355" y="364" width="40" height="28"/>
+              <rect x="334" y="290" width="10" height="36"/>
+              <rect x="355" y="204" width="40" height="10"/>
+              <rect x="406" y="300" width="10" height="36"/>
+              <rect x="130" y="164" width="36" height="10"/>
+              <rect x="196" y="164" width="36" height="10"/>
+            </g>
+            <g class="plan__door">
+              <path d="M355 366V326M395 366A40 40 0 0 0 355 326"/>
+              <path d="M342 326H306M342 290A36 36 0 0 0 306 326"/>
+              <path d="M414 300H450M414 336A36 36 0 0 0 450 300"/>
+            </g>
+            <!-- windows -->
+            <g class="plan__window">
+              <rect x="110" y="366" width="60" height="24"/><rect x="230" y="366" width="60" height="24"/>
+              <rect x="40" y="230" width="24" height="60"/><rect x="40" y="84" width="24" height="50"/>
+              <rect x="100" y="30" width="50" height="24"/><rect x="240" y="30" width="50" height="24"/>
+              <rect x="470" y="30" width="50" height="24"/><rect x="360" y="30" width="30" height="24"/>
+              <rect x="576" y="120" width="24" height="50"/><rect x="576" y="250" width="24" height="50"/>
+            </g>
+            <!-- furniture -->
+            <g class="plan__furniture">
+              <path d="M64 54h120v22H88v90H64z"/>
+              <rect x="96" y="60" width="26" height="12" rx="2"/>
+              <rect x="110" y="250" width="180" height="36"/>
+              <rect x="110" y="238" width="180" height="8"/><rect x="110" y="290" width="180" height="8"/>
+              <circle cx="318" cy="194" r="13"/><path d="M309 185l18 18M327 185l-18 18"/>
+              <rect x="256" y="60" width="74" height="36"/><rect x="256" y="124" width="74" height="36"/>
+              <rect x="540" y="62" width="32" height="76"/><rect x="540" y="148" width="32" height="76"/><rect x="540" y="234" width="32" height="76"/><rect x="418" y="62" width="32" height="76"/>
+              <rect x="346" y="60" width="10" height="140"/>
+              <rect x="394" y="220" width="10" height="70"/>
+            </g>
+            <g class="plan__bunk-upper">
+              <rect x="262" y="66" width="62" height="24"/><rect x="262" y="130" width="62" height="24"/>
+              <rect x="546" y="68" width="20" height="64"/><rect x="546" y="154" width="20" height="64"/><rect x="546" y="240" width="20" height="64"/><rect x="424" y="68" width="20" height="64"/>
+            </g>
+            <!-- labels -->
+            <g class="plan__label">
+              <text x="124" y="118">Kitchen</text>
+              <text x="220" y="104">Ursa</text><text x="220" y="122">Mică</text>
+              <text x="200" y="210">Common room</text>
+              <text x="368" y="262">Entry</text>
+              <text x="494" y="200">Ursa Mare</text>
+              <text x="400" y="420">Porch</text>
+              <text x="0" y="0" transform="translate(386 130) rotate(-90)">Drying room</text>
+            </g>
+            <g class="plan__area">
+              <text x="124" y="134">8 m²</text>
+              <text x="220" y="140">10 m²</text>
+              <text x="200" y="226">33 m²</text>
+              <text x="494" y="216">32 m²</text>
+            </g>
+            <!-- scale + north -->
+            <g class="plan__scale">
+              <path d="M40 486h200M40 480v12M80 482v8M120 480v12M160 482v8M200 480v12M240 480v12"/>
+              <text x="40" y="508">0</text><text x="120" y="508">2</text><text x="200" y="508">4</text><text x="232" y="508">5 m</text>
+              <path d="M590 500V466M590 466l-7 14h14z" class="plan__north"/><text x="590" y="516">N</text>
+            </g>
+          </svg>
+          <figcaption id="plan-cap">Floor plan, ground floor. Common room with a table for sixteen and the stove; kitchen; two bunk rooms, Ursa Mare with eight bunks and Ursa Mică with four; a drying room; the entry; a covered porch facing south.</figcaption>
+        </figure>
+
+        <ul class="rooms" data-rooms>
+          <li data-room="common"><h3>Common room</h3><p>A table for sixteen, a cast-iron stove, board games, and the logbook every guest since 2019 has signed.</p></li>
+          <li data-room="large"><h3>Ursa Mare, 8 bunks</h3><p>Four double-deckers with curtains and a reading light on every bunk. The east window gets the sunrise.</p></li>
+          <li data-room="small"><h3>Ursa Mică, 4 bunks</h3><p>For families and small groups. Book all four if you want the door to yourselves.</p></li>
+          <li data-room="kitchen"><h3>Kitchen</h3><p>The warden’s domain. Dinner at 19:00, breakfast from 7:00, tea whenever the kettle is on, which is always.</p></li>
+          <li data-room="drying"><h3>Drying room</h3><p>Hooks and a boot rack along the stove flue, so wet gear is dry by breakfast.</p></li>
+          <li data-room="porch"><h3>Porch</h3><p>Benches facing south down the valley. The best seat for sunset, unless you’re on the summit.</p></li>
+        </ul>
+      </div>
+
+      <dl class="facts">
+        <div><dt>Open</dt><dd>15 June to 15 October. In winter, for guided groups only.</dd></div>
+        <div><dt>Bunks</dt><dd>Twelve, with duvets and pillows. Bring a sleeping-bag liner or rent one for 10 lei.</dd></div>
+        <div><dt>Meals</dt><dd>Dinner and breakfast are included. Vegetarian on request; tell us about allergies when you book.</dd></div>
+        <div><dt>Water</dt><dd>A spring 40 metres from the door, filtered at the tap inside.</dd></div>
+        <div><dt>Power</dt><dd>Solar. Enough for lights and charging phones, not for hair dryers.</dd></div>
+        <div><dt>Signal</dt><dd>None at the refuge. One bar on the ridge, five minutes up. The warden has a satellite phone for emergencies.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ Routes ============ -->
+  <section class="routes" id="routes" aria-labelledby="routes-title">
+    <div class="wrap">
+      <div class="routes__intro">
+        <h2 class="h2" id="routes-title">Two ways in, one way higher</h2>
+        <p class="lede">Every route here is waymarked with a painted symbol on rocks and trees, every 50 to 100 metres. Follow the symbol, not your phone.</p>
+      </div>
+      <ul class="route-list">
+        <li class="route route--red">
+          <svg class="route__marker" width="44" height="44" aria-hidden="true"><use href="#m-stripe"/></svg>
+          <div class="route__name">
+            <h3>Valea Ursului</h3>
+            <p>Red stripe, from Poiana Neagră</p>
+          </div>
+          <dl class="route__stats">
+            <div><dt>Distance</dt><dd>7.4 km</dd></div>
+            <div><dt>Climb</dt><dd>1,202 m</dd></div>
+            <div><dt>Up</dt><dd>3 h 45</dd></div>
+            <div><dt>Grade</dt><dd>Moderate</dd></div>
+          </dl>
+          <svg class="route__profile" viewBox="0 0 240 64" aria-hidden="true" preserveAspectRatio="none"><polygon points="4,64 4,58.6 27.2,55.9 50.4,51.2 70.7,42.4 91,38.3 114.2,33.2 137.4,28.8 151.9,26.7 172.2,24.7 189.6,22.7 204.1,19.6 218.6,17.8 218.6,64"/><polyline points="4,58.6 27.2,55.9 50.4,51.2 70.7,42.4 91,38.3 114.2,33.2 137.4,28.8 151.9,26.7 172.2,24.7 189.6,22.7 204.1,19.6 218.6,17.8"/></svg>
+          <p class="route__text">The way most people come. A forest road for the first kilometre, then a path beside the stream, then switchbacks through the last of the spruce. Fine for children who like walking.</p>
+        </li>
+        <li class="route route--blue">
+          <svg class="route__marker" width="44" height="44" aria-hidden="true"><use href="#m-cross"/></svg>
+          <div class="route__name">
+            <h3>Muchia Lupului</h3>
+            <p>Blue cross, from Cantonul Lupului</p>
+          </div>
+          <dl class="route__stats">
+            <div><dt>Distance</dt><dd>8.0 km</dd></div>
+            <div><dt>Climb</dt><dd>1,127 m</dd></div>
+            <div><dt>Up</dt><dd>4 h 30</dd></div>
+            <div><dt>Grade</dt><dd>Hard</dd></div>
+          </dl>
+          <svg class="route__profile" viewBox="0 0 240 64" aria-hidden="true" preserveAspectRatio="none"><polygon points="4,64 4,56.1 37.1,49.9 70.4,44 103.5,33.9 136.5,28.8 169.6,26.6 202.9,18.8 236,17.8 236,64"/><polyline points="4,56.1 37.1,49.9 70.4,44 103.5,33.9 136.5,28.8 169.6,26.6 202.9,18.8 236,17.8"/></svg>
+          <p class="route__text">The long way round: up the open crest of the spur from the forestry hut at 715&nbsp;m, with a chained section above 1,600&nbsp;m and a view the whole way. Not for wet days, and not for dogs.</p>
+        </li>
+        <li class="route route--yellow">
+          <svg class="route__marker" width="44" height="44" aria-hidden="true"><use href="#m-triangle"/></svg>
+          <div class="route__name">
+            <h3>Vârful Ursoaica</h3>
+            <p>Yellow triangle, from the refuge</p>
+          </div>
+          <dl class="route__stats">
+            <div><dt>Distance</dt><dd>4.0 km</dd></div>
+            <div><dt>Climb</dt><dd>394 m</dd></div>
+            <div><dt>Up</dt><dd>1 h 30</dd></div>
+            <div><dt>Grade</dt><dd>Moderate</dd></div>
+          </dl>
+          <svg class="route__profile" viewBox="0 0 240 64" aria-hidden="true" preserveAspectRatio="none"><polygon points="4,64 4,17.8 27.2,15.9 50.4,12.3 73.6,11.2 96.8,6.4 120,4.5 120,64"/><polyline points="4,17.8 27.2,15.9 50.4,12.3 73.6,11.2 96.8,6.4 120,4.5"/></svg>
+          <p class="route__text">The sunrise walk. Leave at five with a head torch, be on the summit when the sun clears the ridge, and be back for breakfast at eight.</p>
+        </li>
+      </ul>
+      <p class="routes__note">Profiles share one scale: 0 to 8&nbsp;km across, 600 to 2,250&nbsp;m up. Vârful Ursoaica is 2,236&nbsp;m.</p>
+    </div>
+  </section>
+
+  <!-- ============ Night ============ -->
+  <section class="sky" id="sky" aria-labelledby="sky-title">
+    <canvas class="sky__canvas" data-sky aria-hidden="true"></canvas>
+    <div class="wrap sky__inner">
+      <div class="sky__copy">
+        <h2 class="h2" id="sky-title">Up here the stars go all the way down to the horizon</h2>
+        <p class="lede">There’s no road, village or streetlight for nineteen kilometres. On a clear, moonless night the Milky Way runs from the ridge to the valley, and you can find the Plough without looking for it. The warden keeps binoculars and a star chart by the door.</p>
+      </div>
+      <aside class="tonight" aria-labelledby="tonight-title" data-tonight>
+        <h3 id="tonight-title">Tonight above Ursa</h3>
+        <dl class="tonight__list">
+          <div><dt>Sunset</dt><dd data-t="sunset">about 19:30</dd></div>
+          <div><dt>Fully dark</dt><dd data-t="dark">about 21:10</dd></div>
+          <div class="tonight__moon"><dt>Moon</dt><dd><svg class="moon" viewBox="-20 -20 40 40" width="40" height="40" aria-hidden="true"><circle r="18" class="moon__dark"/><path class="moon__lit" data-moon d=""/></svg><span data-t="moon">Turn on JavaScript to see tonight’s moon.</span></dd></div>
+        </dl>
+        <p class="tonight__verdict" data-t="verdict"></p>
+        <p class="tonight__small">Calculated in your browser for 45.6° N, 24.6° E. Clouds not included.</p>
+        <button class="sky-toggle" type="button" data-motion-toggle aria-pressed="false">Pause the stars</button>
+      </aside>
+    </div>
+    <svg class="sky__ridge" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <defs>
+        <radialGradient id="glow"><stop offset="0" stop-color="#FFC46B" stop-opacity=".55"/><stop offset="1" stop-color="#FFC46B" stop-opacity="0"/></radialGradient>
+      </defs>
+      <path class="sky__ridge-far" d="M0 150 70 132 150 140 230 112 300 124 380 96 450 108 520 84 600 96 680 74 760 88 840 80 920 100 1000 84 1080 104 1160 90 1250 112 1340 100 1440 118V220H0z"/>
+      <path class="sky__ridge-near" d="M0 176 60 166 120 172 190 150 250 158 320 136 380 146 440 128 520 142 600 118 660 128 720 110 790 130 810 133 870 138 930 156 1000 146 1080 164 1160 152 1240 170 1320 160 1440 174V220H0z"/>
+      <path class="sky__ridge-near" d="M794 134v-9l8-6 8 6v9z"/>
+      <circle cx="802" cy="128" r="22" fill="url(#glow)" class="sky__glow"/>
+      <rect x="799.5" y="126" width="5" height="4" fill="#FFC46B"/>
+    </svg>
+  </section>
+
+  <!-- ============ Booking ============ -->
+  <section class="book" id="book" aria-labelledby="book-title">
+    <div class="wrap book__grid">
+      <div class="book__intro">
+        <h2 class="h2" id="book-title">Book a bunk</h2>
+        <p class="price"><span class="price__num">170 lei</span> a night, about €34, with dinner and breakfast.</p>
+        <ul class="terms">
+          <li>No deposit. The warden confirms by email within a day.</li>
+          <li>Pay at the refuge, in cash or by card when the satellite link is up. Bring cash.</li>
+          <li>Children under twelve pay half.</li>
+          <li>Plans change: tell us if you can’t come, so someone else gets the bunk.</li>
+        </ul>
+      </div>
+
+      <div class="form-wrap">
+        <form class="booking" data-booking>
+          <fieldset class="arrival">
+            <legend>Arrival night</legend>
+            <p class="hint" id="cal-hint">Each night shows the twelve bunks. Filled squares are taken.</p>
+            <div class="cal" data-calendar aria-describedby="cal-hint"></div>
+            <div class="field arrival__fallback" data-arrival-fallback>
+              <label for="arrival">Arrival date</label>
+              <input type="date" id="arrival" name="Arrival" required>
+            </div>
+          </fieldset>
+
+          <div class="booking__row">
+            <fieldset class="seg">
+              <legend>Nights</legend>
+              <div class="seg__opts">
+                <label><input type="radio" name="Nights" value="1" checked><span>1</span></label>
+                <label><input type="radio" name="Nights" value="2"><span>2</span></label>
+                <label><input type="radio" name="Nights" value="3"><span>3</span></label>
+              </div>
+            </fieldset>
+            <div class="field field--bunks">
+              <label for="bunks">Bunks</label>
+              <div class="stepper">
+                <button type="button" data-step="-1" aria-label="One bunk fewer">−</button>
+                <input type="number" id="bunks" name="Bunks" min="1" max="12" value="2" required inputmode="numeric" aria-describedby="bunks-msg">
+                <button type="button" data-step="1" aria-label="One bunk more">+</button>
+              </div>
+              <p class="field__msg" id="bunks-msg" data-bunks-msg></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="route">Which way are you coming up?</label>
+            <p class="hint" id="route-hint">If you’re late, we know where to look.</p>
+            <select id="route" name="Route" aria-describedby="route-hint">
+              <option>Red stripe, Valea Ursului</option>
+              <option>Blue cross, Muchia Lupului</option>
+              <option>Along the main ridge</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="booking__row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="Name" autocomplete="name" required maxlength="80" aria-errormessage="name-err">
+              <p class="field__err" id="name-err">Tell us who to expect.</p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" autocomplete="email" required maxlength="120" aria-errormessage="email-err">
+              <p class="field__err" id="email-err">We need an address like name@example.com to confirm your bunk.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Anything we should know? <span class="optional">Optional</span></label>
+            <textarea id="notes" name="Notes" rows="3" maxlength="600" placeholder="Allergies, a birthday, a late start…"></textarea>
+          </div>
+
+          <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="booking__foot">
+            <output class="total" data-total for="bunks">2 bunks for 1 night: 340 lei</output>
+            <button class="btn btn--red" type="submit"><span class="btn__label">Send booking request</span></button>
+          </div>
+          <p class="form-status" data-status role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="success" data-success hidden tabindex="-1">
+          <h3>Booking request sent</h3>
+          <p data-success-text>The warden will confirm by email within a day.</p>
+          <p class="success__concept">Ursa is a concept, so this request went nowhere. On a real site it would reach the warden’s inbox.</p>
+          <button class="btn btn--line" type="button" data-reset>Book another night</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq__grid">
+      <h2 class="h2" id="faq-title">Before you walk up</h2>
+      <div class="faq__list">
+        <details name="faq">
+          <summary>What about bears?</summary>
+          <p>They live here and we’re the guests. Walk in daylight, talk as you go, and keep food inside your pack or the refuge. The bins are bear-proof, and the warden will tell you if one has been seen on your route that week.</p>
+        </details>
+        <details name="faq">
+          <summary>What happens if the weather turns?</summary>
+          <p>Nobody leaves in a storm. If the warden says the ridge isn’t safe, you stay another night and it’s on us.</p>
+        </details>
+        <details name="faq">
+          <summary>Can I bring my dog?</summary>
+          <p>Yes, on a lead, on the red-stripe route. Dogs sleep in the entry, not in the bunk rooms, and there’s a blanket for them. Keep them close at the sheepfold.</p>
+        </details>
+        <details name="faq">
+          <summary>Do I need a sleeping bag?</summary>
+          <p>No. Every bunk has a duvet and a pillow. Bring a sleeping-bag liner, or rent one for 10 lei.</p>
+        </details>
+        <details name="faq">
+          <summary>Can I get there in winter?</summary>
+          <p>Only with a mountain guide and a group booking. The valley route is avalanche terrain from December to April, so email us first and we’ll put you in touch with a guide from Victoria.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <svg width="40" height="40" aria-hidden="true"><use href="#ursa-mark"/></svg>
+      <p>Refugiul Ursa, 1,842&nbsp;m<br>Făgăraș Mountains, Romania</p>
+    </div>
+    <p class="footer__concept">Ursa is a concept project designed and built by <a href="colophon.html">Daniel Butnar</a>. The refuge is fictional; the mountains are real.</p>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="colophon.html">How this site was made</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

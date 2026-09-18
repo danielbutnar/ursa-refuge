@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "site", "runtimeExecutable": "npx", "runtimeArgs": ["-y", "serve@14", "-l", "5510", "."], "port": 5510 }
+  ]
+}

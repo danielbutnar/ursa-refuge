@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-qOhFsq0QMV2REqNwk5hGH5bZE9SkX6gt6yeyKdYPv+U='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>How Ursa was made: a concept site by Daniel Butnar</title>
+<meta name="description" content="The design and code behind Ursa, a concept booking site for a mountain refuge: a generated topographic map, a live night sky, no stock photos.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#E9EDE5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101A16" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://danielbutnar.github.io/ursa-refuge/colophon.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ursa">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="How Ursa was made">
+<meta property="og:description" content="A concept booking site for a mountain refuge, drawn entirely in code: a generated topographic map, a live night sky, no stock photos.">
+<meta property="og:url" content="https://danielbutnar.github.io/ursa-refuge/colophon.html">
+<meta property="og:image" content="https://danielbutnar.github.io/ursa-refuge/assets/logo/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A generated topographic map of a Carpathian valley with a red waymarked trail climbing to the Ursa refuge.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/brygada-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="m-stripe" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" fill="#fff" stroke="#16261F" stroke-width="1.5"/><rect x="1.5" y="8.5" width="21" height="7" fill="#C8201A"/></symbol>
+  <symbol id="m-cross" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" fill="#fff" stroke="#16261F" stroke-width="1.5"/><path d="M9.5 4h5v5.5H20v5h-5.5V20h-5v-5.5H4v-5h5.5z" fill="#1F4E9A"/></symbol>
+  <symbol id="m-triangle" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" fill="#fff" stroke="#16261F" stroke-width="1.5"/><path d="M12 4.5 20 19H4z" fill="#EDB60C"/></symbol>
+  <symbol id="ursa-mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#0A1430"/><path d="M10 43.5 16.1 33.1 24.2 31.1 34.4 29.3 40.2 35.4 54 30.4 53.7 20.5 34.4 29.3" fill="none" stroke="#EEF0E6" stroke-opacity=".4" stroke-width="1.2"/><g fill="#EEF0E6"><circle cx="10" cy="43.5" r="2.6"/><circle cx="16.1" cy="33.1" r="2.6"/><circle cx="24.2" cy="31.1" r="3"/><circle cx="34.4" cy="29.3" r="2.2"/><circle cx="40.2" cy="35.4" r="2.6"/><circle cx="54" cy="30.4" r="2.6"/><circle cx="53.7" cy="20.5" r="3"/></g><rect x="10" y="50" width="44" height="4" fill="#C8201A"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header__inner">
+    <a class="brand" href="./" aria-label="Ursa, home">
+      <svg class="brand__mark" width="32" height="32" aria-hidden="true"><use href="#ursa-mark"/></svg>
+      <span class="brand__name">Ursa</span>
+    </a>
+    <a class="concept-tag" href="colophon.html" aria-current="page">Concept project</a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="./#climb">The climb</a></li>
+        <li><a href="./#refuge">The refuge</a></li>
+        <li><a href="./#routes">Routes</a></li>
+        <li><a href="./#sky">Night sky</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--red header__cta" href="./#book">Book a bunk</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="./#climb">The climb</a></li>
+      <li><a href="./#refuge">The refuge</a></li>
+      <li><a href="./#routes">Routes</a></li>
+      <li><a href="./#sky">Night sky</a></li>
+      <li><a href="./#book">Book a bunk</a></li>
+    </ul>
+  </nav>
+  <p class="mobile-menu__note">You’re reading how Ursa was made.</p>
+</div>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <header class="page__head">
+      <h1 class="page__title">How Ursa was made</h1>
+      <p class="lede">Ursa is a concept: a booking site for a mountain refuge that doesn’t exist, in mountains that do. I designed and built it to show how much a small hospitality site can carry when every picture on it is drawn from data instead of stock photos.</p>
+    </header>
+
+    <div class="prose">
+      <h2>The idea: the page is the walk</h2>
+      <p>A refuge four hours from the road sells two things: the walk up and the night at the top. So the page follows that order. It opens on a hiking map at the car park, climbs through the forest with an altimeter that follows your reading, stops at the refuge’s floor plan, and ends in the dark above the ridge, where the booking form is.</p>
+      <p>The visual language comes from the mountains themselves: Romanian tourist maps, and the painted trail markers you follow on the ground.</p>
+
+      <h2>The map is generated, not drawn</h2>
+      <p>The hero is a mountain generated in your browser from seeded simplex noise, so it’s the same mountain on every visit. A ridge, a glacial valley, a spur and a summit are shaped on top of the noise, and the terrain is calibrated so the refuge sits at exactly 1,842&nbsp;m.</p>
+      <ul>
+        <li>Hillshade is lit from the north-west, as on Swiss maps, and forest is tinted below a tree line that wanders with its own noise.</li>
+        <li>Contours come from marching squares on a grid of heights, one path per 25&nbsp;m level (50&nbsp;m on small screens), with the index contours drawn thicker and labelled.</li>
+        <li>The stream is traced downhill from the cirque; the trailhead is where it crosses 640&nbsp;m.</li>
+        <li>The three routes are found with A* search over the terrain, with a penalty for steep ground. That’s why they switchback where a real path would.</li>
+        <li>Labels place themselves: each claims a box, and the next one tries another side if it would overlap.</li>
+      </ul>
+      <p>On load, the contours rise from the valley floor to the ridge, then the red route draws itself up to the refuge. Point anywhere on the map to read the height and the ground under your cursor. With reduced motion turned on, the finished map appears at once.</p>
+
+      <h2>The sky is calculated</h2>
+      <p>The stars are seeded too, with a Milky Way rising from behind the ridge and the Plough drawn from real star positions. “Tonight above Ursa” works out sunset, the end of astronomical twilight and the moon’s phase in the browser for the refuge’s position, including the lower horizon you get at 1,842&nbsp;m. Only the brighter stars twinkle, only while the section is on screen, and a button stops them.</p>
+
+      <h2>Palette</h2>
+      <p>Map paper and spruce ink by day, trail-marker paint for everything you act on, and night blue below the dusk.</p>
+    </div>
+    <ul class="swatches">
+      <li><span class="swatch" style="background:#E9EDE5"></span><b>Map paper</b><span>#E9EDE5</span></li>
+      <li><span class="swatch" style="background:#16261F"></span><b>Spruce ink</b><span>#16261F</span></li>
+      <li><span class="swatch" style="background:#C8201A"></span><b>Marker red</b><span>#C8201A</span></li>
+      <li><span class="swatch" style="background:#1F4E9A"></span><b>Marker blue</b><span>#1F4E9A</span></li>
+      <li><span class="swatch" style="background:#EDB60C"></span><b>Marker yellow</b><span>#EDB60C</span></li>
+      <li><span class="swatch" style="background:#0A1430"></span><b>Night</b><span>#0A1430</span></li>
+      <li><span class="swatch" style="background:#FFC46B"></span><b>Window light</b><span>#FFC46B</span></li>
+    </ul>
+
+    <div class="prose">
+      <h2>Type</h2>
+      <p>Two families, both self-hosted variable fonts with Romanian diacritics.</p>
+    </div>
+    <div class="specimen">
+      <p class="specimen__big">Stâna din Deal, 1,580 m</p>
+      <p class="specimen__meta">Brygada 1918, for headings, reading and map names: a Polish revival serif whose italic works as cartographic lettering.</p>
+    </div>
+    <div class="specimen">
+      <p class="specimen__big specimen__sans">7.4 km, 1,202 m, 3 h 45</p>
+      <p class="specimen__meta">Schibsted Grotesk, for data, labels and controls: distances, heights, times and buttons.</p>
+    </div>
+
+    <div class="prose">
+      <h2>Trail markers as the key</h2>
+      <p>Romanian trails are waymarked with painted symbols on a white square: a stripe, a cross, a triangle or a dot, in red, blue or yellow. The site uses them the way the mountain does, as the key to every route, on the map, in the legend and in the route list.</p>
+    </div>
+    <ul class="markers">
+      <li><svg width="32" height="32" aria-hidden="true"><use href="#m-stripe"/></svg>Red stripe</li>
+      <li><svg width="32" height="32" aria-hidden="true"><use href="#m-cross"/></svg>Blue cross</li>
+      <li><svg width="32" height="32" aria-hidden="true"><use href="#m-triangle"/></svg>Yellow triangle</li>
+    </ul>
+
+    <div class="prose">
+      <h2>Built to be light and open to everyone</h2>
+      <ul>
+        <li>Plain HTML, CSS and JavaScript. No framework, no build step, no dependencies.</li>
+        <li>No cookies, no analytics and no requests to other servers. The fonts are served from here, and a strict Content Security Policy keeps it that way.</li>
+        <li>No photographs. The map, the floor plan, the elevation profiles and the sky are all drawn with SVG and canvas.</li>
+        <li>Works with a keyboard alone. The booking calendar is a group of radio buttons, so arrow keys move between nights and full nights are skipped.</li>
+        <li>Respects reduced motion and dark mode. In dark mode the map turns into a night map.</li>
+        <li>Everything is laid out for phones first; on a phone the altimeter becomes a strip that stays under the header while you read the climb.</li>
+      </ul>
+
+      <h2>Credits</h2>
+      <p>Concept, design and code by Daniel Butnar. Brygada 1918 and Schibsted Grotesk are used under the SIL Open Font License. The refuge, its warden and its bookings are fictional; the Făgăraș Mountains are real, and worth the walk.</p>
+      <p><a href="./">Back to the map</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <svg width="40" height="40" aria-hidden="true"><use href="#ursa-mark"/></svg>
+      <p>Refugiul Ursa, 1,842&nbsp;m<br>Făgăraș Mountains, Romania</p>
+    </div>
+    <p class="footer__concept">Ursa is a concept project designed and built by Daniel Butnar. The refuge is fictional; the mountains are real.</p>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="./">Back to the map</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

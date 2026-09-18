@@ -1,0 +1,10 @@
+# Normalize line endings: LF in the repo and on checkout (matches git core.autocrlf=input and VS Code files.eol)
+* text=auto eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff2 binary
+*.ico binary
