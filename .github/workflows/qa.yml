@@ -1,0 +1,23 @@
+name: qa
+
+# site-check (axe, overflow at 375/768/1440 px, console and CSP errors, links, head tags, deployment files)
+# and design-lint, from the shared workflow in danielbutnar2003/site-qa. GitHub Pages deploys main on its own;
+# this only reports.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# The check only reads the code; the token needs no write access.
+permissions:
+  contents: read
+
+jobs:
+  site:
+    uses: danielbutnar2003/site-qa/.github/workflows/site-check.yml@main
